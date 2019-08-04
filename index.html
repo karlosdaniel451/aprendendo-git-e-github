@@ -9,5 +9,15 @@
 </head>
 <body>
     <p>Hello, World!</p>
+
+    <script>
+        let p = document.querySelector('p')
+        var mouseEnterEvent = p.addEventListener('mouseenter', () => {
+            setInterval(() => {
+                p.innerHTML += '<br />This is an example...'
+            }, 1400)            
+        })
+
+    </script>
 </body>
 </html>
